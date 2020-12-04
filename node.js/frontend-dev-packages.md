@@ -39,8 +39,21 @@
   - 이 두가지 모듈 시스템이 브라우저에서 잘 돌아갈 수 있도록 webpack이 도와준다.
 - 결론적으로는 Babel과 같은 목적이다 : 개발 생산성 확보 + 브라우저 호환성 확보
 
+## ESLint
+- Linter란 무엇인가?
+  - 코드 정적 분석 도구이며, 정적 분석이란 코드를 실행하지 않고 분석을 수행한다는 의미.
+  - 문법 검사, 코딩 컨벤션 체크 등 코드의 품질 관리 역할을 수행한다.
+  - 코드의 가독성을 높이고, 잠재적인 오류와 버그를 찾아내는 결과가 된다.
+- JavaScript 특성상 문제를 디버깅 하기가 쉽지 않다.
+  - 컴파일을 하지 않으므로 실제로 실행을 해봐야 런타임 오류가 발생한다.
+  - 오류가 있어도 어떻게던 코드가 돌아는 가기 때문에... 비록 잘못된 방향이더라도 일단 실행은 된다.
+- 따라서 요즘 JavaScript 개발자라면 필수적으로 정적 분석 도구를 사용한다고 볼 수 있다.
+  - ESLint는 다양한 JavaScript Linter 중에서 가장 많이 쓰이는 린터임
+  - VS Code의 확장 프로그램으로 설치하면, 코딩하는 실시간으로 체킹을 해 준다.
+
 ## References
 - [프론트엔드 개발환경의 이해: 웹팩(기본)](https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html)
 - [Babel과 Webpack을 이용한 ES6 환경 구축 ②](https://poiemaweb.com/es6-babel-webpack-2)
 - [웹팩의 기본 개념](https://jeonghwan-kim.github.io/js/2017/05/15/webpack.html)
 - [Webpack과 Babel을 이용한 React 개발 환경 구성하기](https://medium.com/wasd/%EC%9B%B9%ED%8C%A9-webpack-%EA%B3%BC-%EB%B0%94%EB%B2%A8-babel-%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-react-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0-fb87d0027766)
+- [ESLint 조금 더 잘 활용하기](https://tech.kakao.com/2019/12/05/make-better-use-of-eslint/)
